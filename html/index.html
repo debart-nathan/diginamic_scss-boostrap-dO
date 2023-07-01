@@ -10,7 +10,7 @@
     <header id="siteHeader" class="header" aria-label="Site header">
       <div class="container">
         <div class="row">
-          <section class="col-md-3 d-none d-xl-flex"id="siteHeaderMediaLinks">
+          <section class="col-md-3 d-none d-xl-flex" id="siteHeaderMediaLinks">
             <ul class="mediaList">
               <li>
                 <a href="http://" target="_blank"><span>Facebook</span></a>
@@ -27,13 +27,22 @@
             </ul>
           </section>
           <!--END of Site Header media links-->
-          <section id="siteHeaderTitle" class="col-md-5 d-flex flex-column align-items-center justify-content-center">
+          <section
+            id="siteHeaderTitle"
+            class="col-md-5 d-flex flex-column align-items-center justify-content-center">
             <a title="Acceuil" rel="home">
-              <h1><img class="siteTitleLogo" src="" alt="logo: domaine d'O, Montpellier 3 M" /></h1>
+              <h1>
+                <img
+                  class="siteTitleLogo"
+                  src=""
+                  alt="logo: domaine d'O, Montpellier 3 M" />
+              </h1>
             </a>
           </section>
           <!--End of Site Title-->
-          <section id="siteHeaderTicketOffice" class="col-md-4 d-none d-xl-flex justify-content-end align-items-start">
+          <section
+            id="siteHeaderTicketOffice"
+            class="col-md-4 d-none d-xl-flex justify-content-end align-items-start">
             <a href="http://" target="_blank">Billetterie</a>
           </section>
           <!--END of Site Header Ticket Office-->
@@ -44,27 +53,41 @@
       END of Site Header
     -->
     <section id="siteNav" aria-label="site Navigation">
-      <div>
-        <div>
-          <div>
-            <div><span>MENU</span></div>
+      <div class="container">
+        <section class="row">
+          <div class="col d-flex justify-content-between">
+            <div class="burgerMenu"><span>MENU</span></div>
             <!--END of Burger Menu-->
-            <nav id="navShortcut" aria-label="">
-              <h2>Navigation principale</h2>
-              <ul>
-                <li><a href="http://"></a></li>
-                <li><a href="http://"></a></li>
-                <li><a href="http://"></a></li>
-                <li><a href="http://"></a></li>
+            <nav
+              id="navShortcut"
+              aria-label=""
+              class="d-none d-xl-block block-menu menu-main">
+              <h2 class="visually-hidden">Navigation principale</h2>
+              <ul class="nav">
+                <li><a class="nav-link" href="http://">Spectacles</a></li>
+                <li><a class="nav-link" href="http://">Zoom sur</a></li>
+                <li><a class="nav-link" href="http://">Avec le public</a></li>
+                <li><a class="nav-link" href="http://">Pratique</a></li>
               </ul>
             </nav>
             <!--END navShortcut-->
-            <div>
+            <button id="searchButton">
               <span>Recherche</span>
-            </div>
-            <!--END searchBar-->
+            </button>
+            <!--END searchButton-->
           </div>
-        </div>
+        </section>
+        <section id="searchRow" class="row visually-hidden-focusable">
+          <div class="col d-flex justify-content-center">
+            <form class="searchForm" role="search">
+              <div>
+                <label for="search" class="visually-hidden">Rechercher</label>
+                <input type="search" name="search" id="search" value="" />
+              </div>
+              <button type="submit">Rechercher</button>
+            </form>
+          </div>
+        </section>
       </div>
     </section>
     <!--
