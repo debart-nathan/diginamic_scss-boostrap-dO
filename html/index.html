@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="../css/styles.css" />
   </head>
   <body>
-    <header aria-label="Site header">
+    <header id="siteHeader" aria-label="Site header">
       <div>
         <div>
-          <div>
+          <section id="siteHeaderMediaLinks">
             <ul>
               <li>
                 <a href="http://" target="_blank"><span>Facebook</span></a>
@@ -25,29 +25,29 @@
                 <a href="http://" target="_blank"><span>YouTube</span></a>
               </li>
             </ul>
-          </div>
+          </section>
           <!--END of Site Header media links-->
-          <div>
+          <section id="siteHeaderTitle">
             <h1><img src="" alt="logo: domaine d'O, Montpellier 3 M" /></h1>
-          </div>
+          </section>
           <!--End of Site Title-->
-          <div>
+          <section id="siteHeaderTicketOffice">
             <a href="http://" target="_blank">Billetterie</a>
-          </div>
-          <!--END of Site Header billetterie shortcut-->
+          </section>
+          <!--END of Site Header Ticket Office-->
         </div>
       </div>
     </header>
     <!--
       END of Site Header
     -->
-    <div>
+    <section id="siteNav" aria-label="site Navigation">
       <div>
         <div>
           <div>
             <div><span>MENU</span></div>
             <!--END of Burger Menu-->
-            <nav id="navShortcut">
+            <nav id="navShortcut" aria-label="">
               <h2>Navigation principale</h2>
               <ul>
                 <li><a href="http://"></a></li>
@@ -64,36 +64,50 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!--
       END of Site Nav
     -->
     <main>
       <section id="highlight">
-        <div>
+        <h2 class="visually-hidden">Information</h2>
+        <article>
           <div>
-            <div>Infos transports en commun été 2023</div>
-            <div>Travaux tramway ligne 1 Saint-Eloi</div>
+            <h3>Infos transports en commun été 2023</h3>
+            <p>Travaux tramway ligne 1 Saint-Eloi</p>
           </div>
           <div>
-            <div>Plus d'info</div>
+            <a href="">Plus d'info</a>
           </div>
-        </div>
+        </article>
       </section>
       <!--End Highlight-->
       <section id="featuredContent">
-        <div>
+        <article>
           <a href="http://">
             <img src="" alt="" />
             <div></div>
           </a>
+        </article>
+        <div id="featuredCarousel">
+          <nav aria-label="navigation des contenu vedette">
+            <button><span class="visually-hidden">précédent</span></button>
+            <button><span class="visually-hidden">suivant</span></button>
+          </nav>
+          <article>
+            <a href="http://">
+              <img src="" alt="" />
+              <div>
+                <h3>
+                  <span>Zoom sur</span>
+                  <span>title</span>
+                </h3>
+                <button>Plus d'info</button>
+              </div>
+            </a>
+          </article>
         </div>
-        <div>
-          <a href="http://">
-            <img src="" alt="" />
-            <div></div>
-          </a>
-        </div>
+        <!--END featuredCarousel-->
       </section>
       <!--END of Featured Content-->
       <section id="festivals">
@@ -141,34 +155,40 @@
             <div>
               <article>
                 <a href="http://">
-                  <div>festival</div>
+                  <div><p>festival</p></div>
                   <div>
                     <a href="http://">
                       <div>date</div>
                       <h3>titre</h3>
                       <div>emplacement</div>
+                    </a>
+                    <div>
+                      <a href="http://">Détails</a>
+                      <p>Entrée Libre</p>
+                    </div>
+                  </div>
+                  <div title="Hors des murs du domaine d'O">
+                    <p class="visually-hidden">Hors des murs du domaine d'O</p>
+                  </div>
+                </a>
+              </article>
+              <article>
+                <a href="http://">
+                  <div><p>festival</p></div>
+                  <div>
+                    <a href="http://">
+                      <p>date</p>
+                      <h3>titre</h3>
+                      <p>emplacement</p>
                     </a>
                     <div>
                       <a href="http://">Détails</a>
                       <a href="http://">Réserver</a>
                     </div>
-                  </div>
-                </a>
-              </article>
-            </div>
-            <div>
-              <article>
-                <a href="http://">
-                  <div>festival</div>
-                  <div>
-                    <a href="http://">
-                      <div>date</div>
-                      <h3>titre</h3>
-                      <div>emplacement</div>
-                    </a>
-                    <div>
-                      <a href="http://">Détails</a>
-                      <a href="http://">Réserver</a>
+                    <div title="Hors des murs du domaine d'O">
+                      <p class="visually-hidden">
+                        Hors des murs du domaine d'O
+                      </p>
                     </div>
                   </div>
                 </a>
