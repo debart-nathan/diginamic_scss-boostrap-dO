@@ -11869,10 +11869,11 @@ ul {
 }
 
 .cards {
-  width: 306px;
-  height: 425px;
+  width: 100%;
+  aspect-ratio: 5/7;
   position: relative;
   transition: 0.2s;
+  overflow: hidden;
 }
 .cards:hover {
   transform: translateY(-5px);
