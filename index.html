@@ -10,28 +10,37 @@
     <header id="siteHeader" class="header" aria-label="Site header">
       <div class="container">
         <div class="row">
-          <section class="col-md-3 d-none d-xl-flex" id="siteHeaderMediaLinks">
-            <ul class="mediaList">
+          <section class="col-md-3 d-none d-md-flex" id="siteHeaderMediaLinks">
+            <ul
+              class="d-flex flex-row flex-wrap justify-content-evenly text-decoration-none">
               <li>
-                <a href="http://" target="_blank"><span>Facebook</span></a>
+                <a href="http://" target="_blank"
+                  ><img src="" alt="Facebook"
+                /></a>
               </li>
               <li>
-                <a href="http://" target="_blank"><span>Instagram</span></a>
+                <a href="http://" target="_blank"
+                  ><img src="" alt="Instagram"
+                /></a>
               </li>
               <li>
-                <a href="http://" target="_blank"><span>Tweeter</span></a>
+                <a href="http://" target="_blank"
+                  ><img src="" alt="Tweeter"
+                /></a>
               </li>
               <li>
-                <a href="http://" target="_blank"><span>YouTube</span></a>
+                <a href="http://" target="_blank"
+                  ><img src="" alt="YouTube"
+                /></a>
               </li>
             </ul>
           </section>
           <!--END of Site Header media links-->
           <section
             id="siteHeaderTitle"
-            class="col-md-5 d-flex flex-column align-items-center justify-content-center">
-            <a title="Acceuil" rel="home">
-              <h1>
+            class="col-md-5 d-flex align-items-center justify-content-center">
+            <a title="Accueil" rel="home">
+              <h1 class="d-flex justify-content-center text-center">
                 <img
                   class="siteTitleLogo"
                   src=""
@@ -42,8 +51,10 @@
           <!--End of Site Title-->
           <section
             id="siteHeaderTicketOffice"
-            class="col-md-4 d-none d-xl-flex justify-content-end align-items-start">
-            <a href="http://" target="_blank">Billetterie</a>
+            class="col-md-4 d-none d-md-flex justify-content-end align-items-start">
+            <a class="text-warning" href="http://" target="_blank"
+              >Billetterie</a
+            >
           </section>
           <!--END of Site Header Ticket Office-->
         </div>
@@ -54,10 +65,8 @@
     -->
     <section id="siteNav" aria-label="site Navigation">
       <div class="container">
-        <section class="row">
-          <div class="col d-flex justify-content-between">
-            <div class="burgerMenu"><span>MENU</span></div>
-            <!--END of Burger Menu-->
+        <section >
+          <div class="d-flex justify-content-center">
             <nav
               id="navShortcut"
               aria-label=""
@@ -71,21 +80,6 @@
               </ul>
             </nav>
             <!--END navShortcut-->
-            <button id="search-button">
-              <span>Recherche</span>
-            </button>
-            <!--END searchButton-->
-          </div>
-        </section>
-        <section id="search-row" class="row visually-hidden-focusable">
-          <div class="col d-flex justify-content-center">
-            <form class="searchForm" role="search">
-              <div>
-                <label for="search" class="visually-hidden">Rechercher</label>
-                <input type="search" name="search" id="search" value="" />
-              </div>
-              <button type="submit">Rechercher</button>
-            </form>
           </div>
         </section>
       </div>
@@ -415,7 +409,7 @@
                   </main>
                 </div>
               </article>
-            </div> 
+            </div>
           </div>
         </div>
       </section>

@@ -11863,6 +11863,11 @@ ul {
   padding: 0;
 }
 
+#navShortcut a {
+  font-size: x-large;
+  font-weight: bold;
+}
+
 .btn:hover {
   color: #000000;
   background-color: white;

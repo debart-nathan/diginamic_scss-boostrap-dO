@@ -2,6 +2,12 @@ ul {
   list-style: none;
   padding: 0;
 }
+
+#navShortcut a{
+  font-size: x-large;
+  font-weight:bold;
+}
+
 .btn:hover {
   color: $black;
   background-color: $white;
