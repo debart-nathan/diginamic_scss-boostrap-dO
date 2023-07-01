@@ -71,13 +71,13 @@
               </ul>
             </nav>
             <!--END navShortcut-->
-            <button id="searchButton">
+            <button id="search-button">
               <span>Recherche</span>
             </button>
             <!--END searchButton-->
           </div>
         </section>
-        <section id="searchRow" class="row visually-hidden-focusable">
+        <section id="search-row" class="row visually-hidden-focusable">
           <div class="col d-flex justify-content-center">
             <form class="searchForm" role="search">
               <div>
@@ -93,83 +93,61 @@
     <!--
       END of Site Nav
     -->
-    <main>
-      <section id="highlight">
-        <h2 class="visually-hidden">Information</h2>
-        <article>
-          <div>
-            <h3>Infos transports en commun été 2023</h3>
-            <p>Travaux tramway ligne 1 Saint-Eloi</p>
-          </div>
-          <div>
-            <a href="">Plus d'info</a>
-          </div>
-        </article>
+    <main class="">
+      <section id="highlight" class="bg-body-warning p-2 my-5 bg-">
+        <div class="container d-flex flex-column gap-2">
+          <h2 class="visually-hidden">Information</h2>
+          <a href="">
+            <article>
+              <div>
+                <h3>Infos transports en commun été 2023</h3>
+                <p>Travaux tramway ligne 1 Saint-Eloi</p>
+              </div>
+              <div>
+                <button>Plus d'info</button>
+              </div>
+            </article>
+          </a>
+        </div>
       </section>
       <!--End Highlight-->
-      <section id="featuredContent">
-        <article>
-          <a href="http://">
-            <img src="" alt="" />
-            <div></div>
-          </a>
-        </article>
-        <div id="featuredCarousel">
-          <nav aria-label="navigation des contenu vedette">
-            <button><span class="visually-hidden">précédent</span></button>
-            <button><span class="visually-hidden">suivant</span></button>
+      <section id="festivals" class="bg-body-tertiary">
+        <div class="container bg-body-tetiary d-flex flex-column gap-2">
+          <nav aria-label="">
+            <h2 class="fs-5">Accès par festival</h2>
+            <div>
+              <ul class="d-flex gap-5 flex-column flex-lg-row">
+                <li class="nav-item">
+                  <a class="btn btn-primary py-1 col rounded-0 fw-bold"href="http://">
+                    <p>Festival Folies d'O</p><p>2023</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary py-1 col rounded-0 fw-bold"href="http://">
+                    <p>>Radio France</p><p>2023</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary py-1 col rounded-0 fw-bold"href="http://">
+                    <p>>O'Millésimes</p><p>2023</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary py-1 col rounded-0 fw-bold"href="http://">
+                    <p>Cinéma sous les étoiles</p><p>2023</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="btn btn-primary py-1 col rounded-0 fw-bold"href="http://">
+                    <p>Les nuits d'O</p><p>2023</p>
+                  </a>
+                </li>
+              </div>
+              <div>
+                <a href="http://"><span>Le Calendrier</span></a>
+              </div>
+            </div>
           </nav>
-          <article>
-            <a href="http://">
-              <img src="" alt="" />
-              <div>
-                <h3>
-                  <span>Zoom sur</span>
-                  <span>title</span>
-                </h3>
-                <a href="">Plus d'info</a>
-              </div>
-            </a>
-          </article>
-        </div>
-        <!--END featuredCarousel-->
-      </section>
-      <!--END of Featured Content-->
-      <section id="festivals">
-        <div>
-          <h2>Accès par festival</h2>
-          <div>
-            <div>
-              <div>
-                <a href="http://">
-                  <span>Festival Folies d'O</span><span>2023</span>
-                </a>
-              </div>
-              <div>
-                <a href="http://">
-                  <span>Radio France</span><span>2023</span>
-                </a>
-              </div>
-              <div>
-                <a href="http://">
-                  <span>O'Millésimes</span><span>2023</span>
-                </a>
-              </div>
-              <div>
-                <a href="http://">
-                  <span>Cinéma sous les étoiles</span><span>2023</span>
-                </a>
-              </div>
-              <div>
-                <a href="http://">
-                  <span>Les nuits d'O</span><span>2023</span>
-                </a>
-              </div>
-            </div>
-            <div>
-              <a href="http://"><span>Le Calendrier</span></a>
-            </div>
-          </div>
         </div>
       </section>
       <!--END of Festival-->
@@ -235,14 +213,16 @@
         <section>
           <div>
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">Espace technique</a></li>
+              <li><a href="">Espace multimedia</a></li>
+              <li><a href="">Lettre d'info </a></li>
+              <li><a href="">Partenaire </a></li>
             </ul>
           </div>
           <div>
             <ul>
-              <li><a href=""></a></li>
-              <li><a href=""></a></li>
+              <li><a href="">Crédits</a></li>
+              <li><a href="">Mentions légales</a></li>
             </ul>
           </div>
         </section>
@@ -287,11 +267,5 @@
     <!--
       END of footer
     -->
-    <div id="cookies">
-      <button>
-        <img src="" alt="" />
-      </button>
-    </div>
-    <!--END of cookies-->
   </body>
 </html>
