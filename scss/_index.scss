@@ -1,0 +1,73 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+#navShortcut a{
+  font-size: x-large;
+  font-weight:bold;
+}
+
+.btn:hover {
+  color: $black;
+  background-color: $white;
+}
+.cards {
+  width: 100%;
+  aspect-ratio:5/7;
+  position: relative;
+  transition: 0.2s;
+  overflow:hidden;
+
+  &:hover {
+    transform: translateY(-5px);
+    transition: all 0.25s ease-in-out;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .info {
+    background-image: linear-gradient(transparent 70%, #111);
+    color: #fff;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    a {
+      font-size: 0.7em;
+    }
+    main {
+      .details > .date {
+        background-image: linear-gradient(transparent 80%, $warning);
+        width: fit-content;
+      }
+
+      .booking > .buttons {
+        button {
+          padding-block: 0.1rem;
+          padding-inline: 1.2em;
+        }
+        .detail {
+          background-color: $white;
+          &:hover {
+            background-color: $warning;
+            color: $white;
+          }
+        }
+        .book {
+          color: $white;
+          &:hover {
+            background-color: $white;
+            color: $warning;
+          }
+        }
+      }
+    }
+  }
+}
+
+a {
+  text-transform: uppercase;
+}
